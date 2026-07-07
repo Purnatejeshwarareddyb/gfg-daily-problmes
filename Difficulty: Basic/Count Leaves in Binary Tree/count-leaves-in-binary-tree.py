@@ -1,0 +1,18 @@
+'''
+class Node:
+    def __init__(self, val):
+        self.right = None
+        self.data = val
+        self.left = None
+'''
+# your task is to complete this function
+# function should return the count of Leaf node's
+# Note: You required to print a new line after every test case
+class Solution:
+    # Function to count the number of leaf nodes in a binary tree.
+    def countLeaves(self, root):
+        if root is None:
+           return 0
+        if root.left is None and root.right is None:
+            return 1
+        return self.countLeaves(root.left) +self.countLeaves(root.right)
