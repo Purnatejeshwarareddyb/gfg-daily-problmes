@@ -7,8 +7,8 @@ class Node:
 '''
 
 class Solution:
+
     def mirror(self, root):
-        #code hear
         if not root:
             return
 
