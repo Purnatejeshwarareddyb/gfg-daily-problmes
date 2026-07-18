@@ -18,10 +18,9 @@ class Solution:
                 elif neighbor != parent:
                     return True
             return False
-            
         for i in range(V):
             if not visited[i]:
                 if dfs(i, -1):
                     return True
-                    
         return False
+        
