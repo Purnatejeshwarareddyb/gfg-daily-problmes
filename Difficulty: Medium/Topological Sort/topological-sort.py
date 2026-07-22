@@ -18,5 +18,4 @@ class Solution:
         for i in range(V):
             if not visited[i]:
                 dfs(i)
-                
         return stack[::-1]
